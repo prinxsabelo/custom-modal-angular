@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-7">
+      <div class="card-block">
+        <div class="h3 text-center text-uppercase">Courses list..</div>
+        <div class="row shadow p-4" *ngFor="let course of courses">
+          <div class="col-md-9">
+            {{ course.title }}
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-success" (click)="viewCourse(course)">
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
